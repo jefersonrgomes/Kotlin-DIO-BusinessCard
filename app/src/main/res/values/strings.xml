@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">businessCard</string>
+    <string name="label_business_cards">Cartão de Visita</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_telefone">Telefone</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_empresa">Nome da Empresa</string>
 </resources>
