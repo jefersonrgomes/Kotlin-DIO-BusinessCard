@@ -16,7 +16,7 @@ Aplicativo de lista de cartão de visita onde é possível manter os dados nome,
 - [x] Material Design
 - [ ] Room
 - [x] MVVM
-- [ ] ViewBinding
+- [x] ViewBinding
 - [ ] LiveData
 - [ ] ListAdapter
 
@@ -31,6 +31,7 @@ Aplicativo de lista de cartão de visita onde é possível manter os dados nome,
 
 - [x] Fase 1 - Preparação do ambiente e criação do projeto no Android Studio - 1º commit and push
 - [x] Fase 2 - Montagem das telas e layout do projeto - 2º commit and push
+- [x] Fase 2.1 - InsertListeners nos botoes de ação - Adicional commit and push
 - [ ] Fase 3 - Configuração do Room Database - 3º commit and push
 - [ ] Fase 4 - Criação da função de compartilhamento de cartão de visitas, testes finais - 4º commit and push
 - [ ] Fase 5 - Personalização e customização do projeto - 5º e ultimo commit and push
