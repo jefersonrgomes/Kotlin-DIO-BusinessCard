@@ -9,49 +9,60 @@
     <!--
     criação do layout item_business_card (RecyclerView; CardView; campos)
     Texto cartão de visitas. -->
+
     <TextView
-        android:id="@+id/txt_title"
+
+        android:id="@+id/txt_novo_cartao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:padding="5dp"
         android:text="@string/label_business_cards"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/guia_superior"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia_superior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="16dp"
-        android:background="@color/teal_700"
+        android:background="@color/white"
         android:padding="10dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        app:layout_constraintTop_toBottomOf="@+id/guia_superior"
         tools:ignore="MissingConstraints"
-        tools:listitem="@layout/item_business_card"
+        tools:itemCount="3"
 
 
-        tools:itemCount="3" />
+        tools:listitem="@layout/item_business_card" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:padding="10dp"
         android:src="@drawable/ic_add"
-        app:backgroundTint="@color/purple_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@color/teal_700"
 
-
-        />
+        app:layout_constraintBottom_toTopOf="@+id/guia_superior"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

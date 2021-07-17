@@ -5,4 +5,11 @@
     <string name="txt_telefone">Telefone</string>
     <string name="txt_email">Email</string>
     <string name="txt_empresa">Nome da Empresa</string>
+    <string name="txt_novo_cartao">Novo Cartão</string>
+    <string name="txt_imput_telefone">Telefone</string>
+    <string name="txt_imput_email">E-mail</string>
+    <string name="txt_imput_empresa">Empresa</string>
+    <string name="txt_imput_nome">Nome</string>
+    <string name="txt_imput_cor">Cor</string>
+    <string name="btn_continuar">Continuar</string>
 </resources>
