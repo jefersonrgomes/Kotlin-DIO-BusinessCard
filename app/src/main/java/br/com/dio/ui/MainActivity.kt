@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import br.com.dio.App
 import br.com.dio.databinding.ActivityMainBinding
+import br.com.dio.util.image
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,10 +29,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     private fun insertListeners() {
         binding.btnAddCard.setOnClickListener {
             val intent = Intent(this@MainActivity, AddBusinessCardActivity::class.java)
             startActivity(intent)
+        }
+        adapter.listnerShare = {card ->
+            image.share(this@MainActivity, card)
         }
     }
 

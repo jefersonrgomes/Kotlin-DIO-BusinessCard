@@ -14,4 +14,5 @@
     <string name="btn_continuar">Continuar</string>
     <string name="txt_description_long">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.</string>
     <string name="label_show_sucess">Seu Cartão foi cadastrado com sucesso😁✌</string>
+    <string name="label_share">Compartilhar Cartão</string>
 </resources>

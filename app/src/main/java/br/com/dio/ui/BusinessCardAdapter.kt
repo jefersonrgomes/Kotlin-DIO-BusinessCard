@@ -39,11 +39,8 @@ class BusinessCardAdapter :
                 binding.mcvContent.setOnClickListener{
                 listnerShare(it)
                 }
-
             }
     }
-
-
 }
 
 class DiffCallback : DiffUtil.ItemCallback<BusinessCard>(){
