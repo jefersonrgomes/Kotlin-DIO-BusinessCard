@@ -17,7 +17,7 @@ abstract class AppDatabase :RoomDatabase(){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     AppDatabase::class.java,
-                    "businesscard2_db"
+                    "businesscard4_db"
                 ).build()
 
                 INSTANCE = instance
@@ -26,5 +26,9 @@ abstract class AppDatabase :RoomDatabase(){
         }
 
     }
+
+    //Cor verde 0- #00FF00
+    //Cor azul bebe -  #64D3C8
+    //Cor Laranja - E64610
 
 }

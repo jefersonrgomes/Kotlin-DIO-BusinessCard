@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">businessCard</string>
-    <string name="label_business_cards">Cartão de Visita</string>
+    <string name="label_business_cards">Bussiness Card Shared</string>
     <string name="txt_nome">Nome</string>
     <string name="txt_telefone">Telefone</string>
     <string name="txt_email">Email</string>
@@ -11,8 +11,11 @@
     <string name="txt_imput_empresa">Empresa</string>
     <string name="txt_imput_nome">Nome</string>
     <string name="txt_imput_cor">Cor</string>
-    <string name="btn_continuar">Continuar</string>
+    <string name="btn_continuar">Salvar Cartão</string>
     <string name="txt_description_long">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.</string>
     <string name="label_show_sucess">Seu Cartão foi cadastrado com sucesso😁✌</string>
     <string name="label_share">Compartilhar Cartão</string>
+    <string name="imagem_de_perfil_de_conta">Imagem de perfil de conta</string>
+    <string name="imagem_de_telefone">Imagem de telefone</string>
+    <string name="imagem_de_e_mail">Imagem de e-mail</string>
 </resources>

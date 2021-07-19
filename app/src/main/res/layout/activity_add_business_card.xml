@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".ui.AddBusinessCardActivity">
+    android:background="@android:color/background_light"
+    tools:context=".ui.AddBusinessCardActivity"
+    >
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -13,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:backgroundTint="#E64A19"
+        android:backgroundTint="@color/Orange_Thirth"
         android:src="@drawable/ic_close"
         app:layout_constraintBottom_toTopOf="@+id/guia_superior"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,15 +25,18 @@
         android:id="@+id/txt_novo_cartao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
         android:padding="5dp"
         android:text="@string/txt_novo_cartao"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/Orange_Second"
 
-        app:layout_constraintBottom_toTopOf="@+id/guia_superior"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_close"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -42,6 +46,21 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.20" />
 
+
+
+    <ImageView
+        android:id="@+id/img_account"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/imagem_de_telefone"
+        android:src="@drawable/ic_account"
+        app:layout_constraintTop_toTopOf="@+id/txt_imput_nome"
+        app:tint="@color/Orange_Second"
+
+        app:layout_constraintStart_toStartOf="@id/btn_close"
+        tools:ignore="InvalidId,MissingConstraints" />
+
+
     <com.google.android.material.textfield.TextInputLayout
 
         android:id="@+id/txt_imput_nome"
@@ -49,47 +68,71 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_imput_telefone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_account"
         app:layout_constraintTop_toBottomOf="@+id/guia_superior">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
             android:inputType="text"
-            android:textSize="26sp"
 
-            />
+            android:textSize="20sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/img_fone"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/imagem_de_telefone"
+
+        android:src="@drawable/ic_phone"
+        app:layout_constraintTop_toTopOf="@+id/txt_imput_telefone"
+        app:tint="@color/Orange_Second"
+        app:layout_constraintStart_toStartOf="@id/btn_close"
+
+        tools:ignore="InvalidId,MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
 
         android:id="@+id/txt_imput_telefone"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
         android:hint="@string/txt_imput_telefone"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/txt_imput_email"
-        app:layout_constraintTop_toBottomOf="@+id/txt_imput_nome"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_fone"
+        app:layout_constraintTop_toBottomOf="@+id/txt_imput_nome">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+
             android:inputType="number"
-            android:textSize="26sp"
-            />
+            android:textSize="20sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/imagem_de_telefone"
+
+        android:src="@drawable/ic_email"
+        app:layout_constraintTop_toTopOf="@+id/txt_imput_email"
+        app:tint="@color/Orange_Second"
+        app:layout_constraintStart_toStartOf="@id/btn_close"
+
+        tools:ignore="InvalidId,MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
 
@@ -100,12 +143,11 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
 
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
         android:hint="@string/txt_email"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_mail"
         app:layout_constraintBottom_toTopOf="@+id/txt_imput_empresa"
         app:layout_constraintTop_toBottomOf="@+id/txt_imput_telefone"
        >
@@ -114,11 +156,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textEmailAddress"
-            android:textSize="26sp"
+            android:fontFamily="sans-serif-medium"
+
+            android:textSize="20sp"
 
             />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/img_business"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/imagem_de_telefone"
+
+        android:src="@drawable/ic_business"
+        app:layout_constraintTop_toTopOf="@+id/txt_imput_empresa"
+        app:tint="@color/Orange_Second"
+        app:layout_constraintStart_toStartOf="@id/btn_close"
+
+        tools:ignore="InvalidId,MissingConstraints" />
 
     <com.google.android.material.textfield.TextInputLayout
 
@@ -127,12 +184,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
         android:hint="@string/txt_imput_empresa"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_business"
         app:layout_constraintBottom_toTopOf="@+id/txt_imput_cor"
         app:layout_constraintTop_toBottomOf="@+id/txt_imput_email"
         >
@@ -140,14 +196,27 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+
             android:inputType="text"
-            android:textSize="26sp"
+            android:textSize="20sp"
 
             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <ImageView
+        android:id="@+id/img_palete_colors"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/imagem_de_telefone"
 
+        android:src="@drawable/ic_palette"
+        app:layout_constraintTop_toTopOf="@+id/txt_imput_cor"
+        app:tint="@color/Orange_Second"
+        app:layout_constraintStart_toStartOf="@id/btn_close"
+
+        tools:ignore="InvalidId,MissingConstraints" />
     <com.google.android.material.textfield.TextInputLayout
 
         android:id="@+id/txt_imput_cor"
@@ -156,13 +225,12 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
 
-        android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
 
         android:hint="@string/txt_imput_cor"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_palete_colors"
         app:layout_constraintBottom_toTopOf="@+id/guia_inferior"
         app:layout_constraintTop_toBottomOf="@+id/txt_imput_empresa"
         >
@@ -170,9 +238,11 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
             android:inputType="text"
-            android:textSize="26sp"
+            android:textSize="20sp"
             />
+
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -190,15 +260,16 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/btn_continuar"
+        android:fontFamily="sans-serif-black"
         android:padding="10dp"
         android:text="@string/btn_continuar"
+        android:textColor="@color/white"
         android:textSize="28sp"
-        app:backgroundTintMode="screen"
+        app:backgroundTint="@color/Orange_Second"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="@id/guia_inferior" />
 
 
