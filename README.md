@@ -2,7 +2,7 @@
 # Criando um App de Cartão de Visitas em Kotlin
 
 
-<img src="https://user-images.githubusercontent.com/10172471/125153349-718e6c00-e129-11eb-8f87-6bb2eca4ee5a.png" width="150px" height="50px">|<p>[INTER ANDROID DEVELOPER 2021](https://digitalinnovation.one/bootcamps/inter-android-developer?utm_source=lp-orbi-techboost&utm_medium=organic&utm_campaign=inter-android-developer) </p>| <img src="https://user-images.githubusercontent.com/10172471/125732178-f4cf5c2a-4ec3-4768-8f24-a3ab0c65baee.png" width="125px" height="50px">
+<img src="https://user-images.githubusercontent.com/10172471/125153349-718e6c00-e129-11eb-8f87-6bb2eca4ee5a.png" height="75px">|<img src="https://user-images.githubusercontent.com/10172471/126436996-095e9b17-c50f-4db1-8fae-482a99195492.png" height="150px">|<img src="https://user-images.githubusercontent.com/10172471/125732178-f4cf5c2a-4ec3-4768-8f24-a3ab0c65baee.png" height="75px">
 :---:|:---:|:---:
 
 ## Versão Final
