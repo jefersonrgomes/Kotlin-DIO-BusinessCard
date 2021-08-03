@@ -44,7 +44,3 @@ Aplicativo de lista de cartão de visita onde é possível manter os dados nome,
 - [x] Fase 5 - Personalização e customização do projeto - 5º e ultimo commit and push
 
 ![image](https://user-images.githubusercontent.com/10172471/126141361-2f4a448d-f78a-4a47-a460-6392024919a2.png)
-
-# A saga Kotlin continua ... 
-
-![hd-wallpaper-of-cool-android-backpack-wallpaper-for-desktop-tablet-or-laptop-tablet-1489786096](https://user-images.githubusercontent.com/10172471/125572247-563f7262-02c0-418e-8a4a-99e4d44a0dd4.jpg)
